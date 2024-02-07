@@ -21,7 +21,7 @@
     </head>
     <body>
         <div id="container">
-            <div id="rating" hidden>
+            <div id="rating" class="card">
                 <div class="img">
                     <img src="./images/icon-star.svg" alt="star icon" />
                 </div>
@@ -31,15 +31,15 @@
                     feedback is appreciated to help us improve our offering!
                 </p>
                 <ul>
-                    <li><p>1</p></li>
-                    <li><p>2</p></li>
-                    <li><p>3</p></li>
-                    <li><p>4</p></li>
-                    <li><p>5</p></li>
+                    <li class="point"><p>1</p></li>
+                    <li class="point"><p>2</p></li>
+                    <li class="point"><p>3</p></li>
+                    <li class="point"><p>4</p></li>
+                    <li class="point"><p>5</p></li>
                 </ul>
                 <button type="submit"><p>Submit</p></button>
             </div>
-            <div id="thank-you">
+            <div id="thank-you" class="card">
                 <div>
                     <img
                         id="thank-you-img"
@@ -47,10 +47,12 @@
                         alt="phone image"
                     />
                 </div>
-                <p class="orange">
-                    You selected <span id="score"></span> out of 5
-                </p>
-                <h2>Thank you!</h2>
+                <div id="score-message">
+                    <p class="orange">
+                        You selected <span id="score"></span> out of 5
+                    </p>
+                </div>
+                <h2 id="thank-you-h2">Thank you!</h2>
                 <p>
                     We appreciate you taking the time to give a rating. If you
                     ever need more support, don’t hesitate to get in touch!
@@ -65,6 +67,7 @@
                 >Frontend Mentor</a
             >. Coded by <a href="#">Anna Rurak</a>.
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./index.js"></script>
     </body>
 </html>
