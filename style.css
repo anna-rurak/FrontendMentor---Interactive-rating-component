@@ -146,6 +146,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 7px;
 }
 
 #thank-you-img {
@@ -153,23 +154,22 @@ button:hover {
 }
 
 #score-message {
-    margin: 1rem;
+    margin: 2.3rem;
+    background-color: #262f38;
+    height: 2.5rem;
+    border-radius: 30px;
 }
 
 .orange {
-    background-color: #262f38;
-    height: 3rem;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     color: #fdb580;
-    border-radius: 20px;
-    width: 50%;
 }
 
-/* #thank-you-h2 {
-    margin-top: 5rem;
-} */
+#score {
+    margin: 0 7px;
+}
 
 .attribution {
     font-size: 11px;
@@ -177,4 +177,10 @@ button:hover {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 540px) {
+    .card {
+        margin: 20px;
+    }
 }
