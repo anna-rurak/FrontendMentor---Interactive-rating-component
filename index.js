@@ -22,12 +22,16 @@ $("button").on("click", function () {
     // checking if the score was choosen
     const scoreArray = $(".point");
     const hasClickedClass = scoreArray.hasClass("clicked");
+    // find element that user chose
+    const chosenScore = scoreArray.filter(".clicked");
+    const points = scoreArray.index(chosenScore) + 1;
 
     while (true) {
         if (hasClickedClass === true) {
-            $("#rating").animate({ opacity: 0 }, 500, function () {
+            $("#rating").fadeOut("slow", function () {
                 $("#rating").hide();
-                $("#thank-you").animate({ opacity: 1 }, 700).show();
+                $("#score").html(` ${points} `);
+                $("#thank-you").fadeIn("slow");
             });
             break;
         } else {
